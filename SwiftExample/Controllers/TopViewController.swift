@@ -11,7 +11,7 @@ import UIKit
 class TopViewController: UIViewController {
 
     //  MARK: - Property
-    let items = ["Closure", "BackgroundAnimation"]
+    let items = ["Closure", "BackgroundAnimation", "BackgroundVideo"]
     
     //  MARK: - IBOutlet
     @IBOutlet weak var tableView: UITableView!
@@ -60,10 +60,17 @@ extension TopViewController: UITableViewDelegate {
             vc.testClosure = { [weak self] str in
                 self?.showAlert(message: str)
             }
+
         case 1:
             let storyboard = UIStoryboard(name: BackgroundAnimationViewController.storyboardName, bundle: nil)
             guard let vc = storyboard.instantiateInitialViewController() as? BackgroundAnimationViewController else { return }
             self.navigationController?.pushViewController(vc, animated: true)
+  
+        case 2:
+            let storyboard = UIStoryboard(name: BackgroundVideoViewController.storyboardName, bundle: nil)
+            guard let vc = storyboard.instantiateInitialViewController() as? BackgroundVideoViewController else { return }
+            self.navigationController?.pushViewController(vc, animated: true)
+
         default:
             break
         }

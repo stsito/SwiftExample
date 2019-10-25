@@ -10,6 +10,9 @@
 		5804537F236351FB00552E32 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804537E236351FB00552E32 /* UIView.swift */; };
 		580453812363523400552E32 /* BackgroundAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580453802363523400552E32 /* BackgroundAnimationViewController.swift */; };
 		580453872363526E00552E32 /* BackgroundAnimationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 580453862363526E00552E32 /* BackgroundAnimationViewController.storyboard */; };
+		580453892363562600552E32 /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 580453882363562600552E32 /* sample.mp4 */; };
+		5804538B2363565A00552E32 /* BackgroundVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804538A2363565A00552E32 /* BackgroundVideoViewController.swift */; };
+		5804538D2363566A00552E32 /* BackgroundVideoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5804538C2363566A00552E32 /* BackgroundVideoViewController.storyboard */; };
 		582F303E2362CEFE0006D7D0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582F303D2362CEFE0006D7D0 /* UIViewController.swift */; };
 		582F30402362D0270006D7D0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582F303F2362D0270006D7D0 /* String.swift */; };
 		5843DDB92362A522000DD26B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843DDB82362A522000DD26B /* AppDelegate.swift */; };
@@ -46,6 +49,9 @@
 		5804537E236351FB00552E32 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		580453802363523400552E32 /* BackgroundAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAnimationViewController.swift; sourceTree = "<group>"; };
 		580453862363526E00552E32 /* BackgroundAnimationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BackgroundAnimationViewController.storyboard; sourceTree = "<group>"; };
+		580453882363562600552E32 /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
+		5804538A2363565A00552E32 /* BackgroundVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundVideoViewController.swift; sourceTree = "<group>"; };
+		5804538C2363566A00552E32 /* BackgroundVideoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BackgroundVideoViewController.storyboard; sourceTree = "<group>"; };
 		582F303D2362CEFE0006D7D0 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		582F303F2362D0270006D7D0 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		5843DDB52362A522000DD26B /* SwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +137,7 @@
 				5843DDB82362A522000DD26B /* AppDelegate.swift */,
 				5843DDBA2362A522000DD26B /* SceneDelegate.swift */,
 				5843DDC12362A522000DD26B /* Assets.xcassets */,
+				580453882363562600552E32 /* sample.mp4 */,
 				5843DDC32362A522000DD26B /* LaunchScreen.storyboard */,
 				5843DDC62362A522000DD26B /* Info.plist */,
 			);
@@ -160,6 +167,8 @@
 			children = (
 				580453862363526E00552E32 /* BackgroundAnimationViewController.storyboard */,
 				580453802363523400552E32 /* BackgroundAnimationViewController.swift */,
+				5804538C2363566A00552E32 /* BackgroundVideoViewController.storyboard */,
+				5804538A2363565A00552E32 /* BackgroundVideoViewController.swift */,
 				588A24C52362CB76000DD376 /* ClosureViewController.storyboard */,
 				588A24C62362CB76000DD376 /* ClosureViewController.swift */,
 				5843DDEB2362A645000DD26B /* TopViewController.storyboard */,
@@ -281,9 +290,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5843DDC52362A522000DD26B /* LaunchScreen.storyboard in Resources */,
+				580453892363562600552E32 /* sample.mp4 in Resources */,
 				5843DDEC2362A645000DD26B /* TopViewController.storyboard in Resources */,
 				588A24C72362CB76000DD376 /* ClosureViewController.storyboard in Resources */,
 				580453872363526E00552E32 /* BackgroundAnimationViewController.storyboard in Resources */,
+				5804538D2363566A00552E32 /* BackgroundVideoViewController.storyboard in Resources */,
 				5843DDC22362A522000DD26B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +324,7 @@
 				5804537F236351FB00552E32 /* UIView.swift in Sources */,
 				5843DDE92362A618000DD26B /* TopViewController.swift in Sources */,
 				5843DDB92362A522000DD26B /* AppDelegate.swift in Sources */,
+				5804538B2363565A00552E32 /* BackgroundVideoViewController.swift in Sources */,
 				582F303E2362CEFE0006D7D0 /* UIViewController.swift in Sources */,
 				588A24C82362CB76000DD376 /* ClosureViewController.swift in Sources */,
 				582F30402362D0270006D7D0 /* String.swift in Sources */,
