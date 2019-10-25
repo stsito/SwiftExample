@@ -11,7 +11,6 @@ import UIKit
 class ClosureViewController: UIViewController {
 
     static let storyboardName = "ClosureViewController"
-
     var testClosure: ((String) -> Void)?
 
     override func viewDidLoad() {
