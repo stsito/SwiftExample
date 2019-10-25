@@ -57,8 +57,8 @@ extension TopViewController: UITableViewDelegate {
             let storyboard = UIStoryboard(name: ClosureViewController.storyboardName, bundle: nil)
             guard let vc = storyboard.instantiateInitialViewController() as? ClosureViewController else { return }
             self.navigationController?.pushViewController(vc, animated: true)
-            vc.testClosure = { str in
-                print("taaped")
+            vc.testClosure = { [weak self] str in
+                self?.showAlert(message: str)
             }
         default:
             break

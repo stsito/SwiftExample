@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		582F303E2362CEFE0006D7D0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582F303D2362CEFE0006D7D0 /* UIViewController.swift */; };
+		582F30402362D0270006D7D0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582F303F2362D0270006D7D0 /* String.swift */; };
 		5843DDB92362A522000DD26B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843DDB82362A522000DD26B /* AppDelegate.swift */; };
 		5843DDBB2362A522000DD26B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843DDBA2362A522000DD26B /* SceneDelegate.swift */; };
 		5843DDC22362A522000DD26B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5843DDC12362A522000DD26B /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		582F303D2362CEFE0006D7D0 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		582F303F2362D0270006D7D0 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		5843DDB52362A522000DD26B /* SwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5843DDB82362A522000DD26B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5843DDBA2362A522000DD26B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		582F303C2362CEDD0006D7D0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				582F303F2362D0270006D7D0 /* String.swift */,
+				582F303D2362CEFE0006D7D0 /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		5843DDAC2362A522000DD26B = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +118,7 @@
 		5843DDB72362A522000DD26B /* SwiftExample */ = {
 			isa = PBXGroup;
 			children = (
+				582F303C2362CEDD0006D7D0 /* Extensions */,
 				588A24C22362C561000DD376 /* Views */,
 				5843DDEA2362A622000DD26B /* Controllers */,
 				5843DDB82362A522000DD26B /* AppDelegate.swift */,
@@ -287,7 +301,9 @@
 			files = (
 				5843DDE92362A618000DD26B /* TopViewController.swift in Sources */,
 				5843DDB92362A522000DD26B /* AppDelegate.swift in Sources */,
+				582F303E2362CEFE0006D7D0 /* UIViewController.swift in Sources */,
 				588A24C82362CB76000DD376 /* ClosureViewController.swift in Sources */,
+				582F30402362D0270006D7D0 /* String.swift in Sources */,
 				5843DDBB2362A522000DD26B /* SceneDelegate.swift in Sources */,
 				588A24C42362C592000DD376 /* TopCell.swift in Sources */,
 			);
