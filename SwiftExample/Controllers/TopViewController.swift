@@ -11,7 +11,7 @@ import UIKit
 class TopViewController: UIViewController {
 
     //  MARK: - Property
-    let items = ["Closure", "BackgroundAnimation", "BackgroundVideo", "BarChart"]
+    let items = ["Closure", "BackgroundAnimation", "BackgroundVideo", "BarChart", "PieChart"]
     
     //  MARK: - IBOutlet
     @IBOutlet weak var tableView: UITableView!
@@ -74,6 +74,11 @@ extension TopViewController: UITableViewDelegate {
         case 3:
             let storyboard = UIStoryboard(name: BarChartViewController.storyboardName, bundle: nil)
             guard let vc = storyboard.instantiateInitialViewController() as? BarChartViewController else { return }
+            self.navigationController?.pushViewController(vc, animated: true)
+         
+        case 4:
+            let storyboard = UIStoryboard(name: PieChartViewController.storyboardName, bundle: nil)
+            guard let vc = storyboard.instantiateInitialViewController() as? PieChartViewController else { return }
             self.navigationController?.pushViewController(vc, animated: true)
             
         default:

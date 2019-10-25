@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nYf-XM-fI1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pie Chart View Controller-->
+        <scene sceneID="cPv-l6-J3e">
+            <objects>
+                <viewController id="nYf-XM-fI1" customClass="PieChartViewController" customModule="SwiftExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TTK-5j-7Es">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06V-sF-9BK" customClass="PieChartView" customModule="SwiftExample" customModuleProvider="target">
+                                <rect key="frame" x="20" y="261" width="374" height="374"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="06V-sF-9BK" secondAttribute="height" multiplier="1:1" id="Ff3-Yh-UaX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="06V-sF-9BK" firstAttribute="leading" secondItem="qNU-lK-ylm" secondAttribute="leading" constant="20" id="Abb-Cy-qwz"/>
+                            <constraint firstItem="qNU-lK-ylm" firstAttribute="trailing" secondItem="06V-sF-9BK" secondAttribute="trailing" constant="20" id="dix-cL-1zN"/>
+                            <constraint firstItem="06V-sF-9BK" firstAttribute="centerY" secondItem="TTK-5j-7Es" secondAttribute="centerY" id="h8k-D2-nnW"/>
+                            <constraint firstItem="06V-sF-9BK" firstAttribute="centerX" secondItem="TTK-5j-7Es" secondAttribute="centerX" id="h9w-ez-ltf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qNU-lK-ylm"/>
+                    </view>
+                    <connections>
+                        <outlet property="pieChartView" destination="06V-sF-9BK" id="4sY-nv-1h8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqQ-dM-8Dz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

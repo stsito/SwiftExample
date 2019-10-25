@@ -19,6 +19,11 @@ class BarChartViewController: UIViewController {
         self.barChartView.rate = 65;
         self.barChartView.barBackgroundColor = UIColor.lightGray;
         self.barChartView.isAnimation = true
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        //  棒グラフ描画        
         self.barChartView.drewBar()
     }
 }

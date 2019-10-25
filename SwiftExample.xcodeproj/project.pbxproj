@@ -16,6 +16,9 @@
 		5804538F236358A400552E32 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804538E236358A400552E32 /* BarChartViewController.swift */; };
 		58045391236358B200552E32 /* BarChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58045390236358B200552E32 /* BarChartViewController.storyboard */; };
 		58045393236359DE00552E32 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58045392236359DE00552E32 /* BarChartView.swift */; };
+		5804539523635C1A00552E32 /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804539423635C1A00552E32 /* PieChartViewController.swift */; };
+		5804539723635C2800552E32 /* PieChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5804539623635C2800552E32 /* PieChartViewController.storyboard */; };
+		5804539923635D9E00552E32 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5804539823635D9E00552E32 /* PieChartView.swift */; };
 		582F303E2362CEFE0006D7D0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582F303D2362CEFE0006D7D0 /* UIViewController.swift */; };
 		582F30402362D0270006D7D0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582F303F2362D0270006D7D0 /* String.swift */; };
 		5843DDB92362A522000DD26B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5843DDB82362A522000DD26B /* AppDelegate.swift */; };
@@ -58,6 +61,9 @@
 		5804538E236358A400552E32 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		58045390236358B200552E32 /* BarChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarChartViewController.storyboard; sourceTree = "<group>"; };
 		58045392236359DE00552E32 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		5804539423635C1A00552E32 /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
+		5804539623635C2800552E32 /* PieChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PieChartViewController.storyboard; sourceTree = "<group>"; };
+		5804539823635D9E00552E32 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		582F303D2362CEFE0006D7D0 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		582F303F2362D0270006D7D0 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		5843DDB52362A522000DD26B /* SwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +185,8 @@
 				5804538E236358A400552E32 /* BarChartViewController.swift */,
 				588A24C52362CB76000DD376 /* ClosureViewController.storyboard */,
 				588A24C62362CB76000DD376 /* ClosureViewController.swift */,
+				5804539623635C2800552E32 /* PieChartViewController.storyboard */,
+				5804539423635C1A00552E32 /* PieChartViewController.swift */,
 				5843DDEB2362A645000DD26B /* TopViewController.storyboard */,
 				5843DDE82362A618000DD26B /* TopViewController.swift */,
 			);
@@ -189,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				58045392236359DE00552E32 /* BarChartView.swift */,
+				5804539823635D9E00552E32 /* PieChartView.swift */,
 				588A24C32362C592000DD376 /* TopCell.swift */,
 			);
 			path = Views;
@@ -302,6 +311,7 @@
 				580453892363562600552E32 /* sample.mp4 in Resources */,
 				58045391236358B200552E32 /* BarChartViewController.storyboard in Resources */,
 				5843DDEC2362A645000DD26B /* TopViewController.storyboard in Resources */,
+				5804539723635C2800552E32 /* PieChartViewController.storyboard in Resources */,
 				588A24C72362CB76000DD376 /* ClosureViewController.storyboard in Resources */,
 				580453872363526E00552E32 /* BackgroundAnimationViewController.storyboard in Resources */,
 				5804538D2363566A00552E32 /* BackgroundVideoViewController.storyboard in Resources */,
@@ -330,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5804539923635D9E00552E32 /* PieChartView.swift in Sources */,
 				580453812363523400552E32 /* BackgroundAnimationViewController.swift in Sources */,
 				5804537F236351FB00552E32 /* UIView.swift in Sources */,
 				5804538F236358A400552E32 /* BarChartViewController.swift in Sources */,
@@ -341,6 +352,7 @@
 				582F30402362D0270006D7D0 /* String.swift in Sources */,
 				5843DDBB2362A522000DD26B /* SceneDelegate.swift in Sources */,
 				588A24C42362C592000DD376 /* TopCell.swift in Sources */,
+				5804539523635C1A00552E32 /* PieChartViewController.swift in Sources */,
 				58045393236359DE00552E32 /* BarChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
