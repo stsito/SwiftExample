@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uYG-cG-SOH">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bar Chart View Controller-->
+        <scene sceneID="ySe-z6-3Mf">
+            <objects>
+                <viewController id="uYG-cG-SOH" customClass="BarChartViewController" customModule="SwiftExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z66-EP-EN5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2V-0b-wsV" customClass="BarChartView" customModule="SwiftExample" customModuleProvider="target">
+                                <rect key="frame" x="16" y="308.5" width="343" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eog-wY-fm4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="A2V-0b-wsV" firstAttribute="centerY" secondItem="Z66-EP-EN5" secondAttribute="centerY" id="VJE-GT-Cl0"/>
+                            <constraint firstItem="e59-Rs-sSA" firstAttribute="trailing" secondItem="A2V-0b-wsV" secondAttribute="trailing" constant="16" id="dEI-u2-1ka"/>
+                            <constraint firstItem="A2V-0b-wsV" firstAttribute="centerX" secondItem="Z66-EP-EN5" secondAttribute="centerX" id="fA3-t5-9TX"/>
+                            <constraint firstItem="A2V-0b-wsV" firstAttribute="leading" secondItem="e59-Rs-sSA" secondAttribute="leading" constant="16" id="z6m-gP-wLr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e59-Rs-sSA"/>
+                    </view>
+                    <connections>
+                        <outlet property="barChartView" destination="A2V-0b-wsV" id="jM0-DX-Isy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uKl-EN-ZNl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="116.49175412293854"/>
+        </scene>
+    </scenes>
+</document>
