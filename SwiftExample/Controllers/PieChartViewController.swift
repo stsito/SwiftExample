@@ -17,8 +17,6 @@ class PieChartViewController: UIViewController {
         super.viewDidLoad()
         //  円グラフ
         self.pieChartView.rate = 60
-        self.pieChartView.pieBackgroundColor = UIColor.lightGray
-        self.pieChartView.isAnimation = true
     }
     
     override func viewDidLayoutSubviews() {
