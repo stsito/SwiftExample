@@ -10,19 +10,19 @@ import UIKit
 
 class BarChartView: UIView {
 
-    //  棒グラフ色
+    ///  棒グラフ色
     var barColor = UIColor.systemRed
-    //  テキスト色
+    ///  テキスト色
     var textColor = UIColor.systemGreen
-    //  値のフォントサイズ
+    ///  値のフォントサイズ
     var valueFontSize = CGFloat(18.0)
-    //  パーセントのフォントサイズ
+    ///  パーセントのフォントサイズ
     var percnetFontSize = CGFloat(10.0)
-    //  アニメーションスピード
+    ///  アニメーションスピード
     var animationTime = CGFloat(2.0)
-    //  値
+    ///  値
     var rate = 0
-    //  アニメーションフラグ
+    ///  アニメーションフラグ
     var isAnimation = true
     
     override func awakeFromNib() {
@@ -50,20 +50,28 @@ extension BarChartView {
         
         //  パーセント
         let percnetLabel = UILabel()
-        percnetLabel.backgroundColor = UIColor.clear;
+        percnetLabel.backgroundColor = UIColor.clear
         percnetLabel.font = UIFont.systemFont(ofSize: percnetFontSize)
         percnetLabel.text = "%"
         percnetLabel.textColor = self.textColor
         percnetLabel.sizeToFit()
-        percnetLabel.frame = CGRect(x: valueLabel.frame.maxX, y: valueLabel.frame.maxY - 15, width: percnetLabel.frame.size.width, height: percnetLabel.frame.size.height);
+        percnetLabel.frame = CGRect(
+            x: valueLabel.frame.maxX,
+            y: valueLabel.frame.maxY - 15,
+            width: percnetLabel.frame.size.width,
+            height: percnetLabel.frame.size.height)
 
         //  基底
         let baseView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 30))
         baseView.backgroundColor = UIColor.clear
         baseView.addSubview(valueLabel)
         baseView.addSubview(percnetLabel)
-        baseView.frame = CGRect(x: 0, y: 0, width: valueLabel.frame.size.width + percnetLabel.frame.size.width, height: valueLabel.frame.size.height);
-        baseView.center = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height / 2);
+        baseView.frame = CGRect(
+            x: 0,
+            y: 0,
+            width: valueLabel.frame.size.width + percnetLabel.frame.size.width,
+            height: valueLabel.frame.size.height)
+        baseView.center = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height / 2)
 
         self.addSubview(baseView)
     }
@@ -72,7 +80,7 @@ extension BarChartView {
     private func drawAnimation() {
         //  バー
         let barView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: self.frame.size.height))
-        barView.backgroundColor = barColor;
+        barView.backgroundColor = barColor
         self.addSubview(barView)
         
         //  アニメーション有無
@@ -89,7 +97,7 @@ extension BarChartView {
                     barView.frame = CGRect(x: 0, y: 0, width: width, height: height)
                 },
                 completion: nil
-            );
+            )
         } else {
             barView.frame = CGRect(x: 0, y: 0, width: width, height: height)
         }
