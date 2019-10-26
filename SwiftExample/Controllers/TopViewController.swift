@@ -19,6 +19,8 @@ class TopViewController: UIViewController {
     //  MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        //  区切り線を無くす
+        tableView.tableFooterView = UIView(frame: .zero)
     }
 
     override func viewWillAppear(_ animated: Bool) {
